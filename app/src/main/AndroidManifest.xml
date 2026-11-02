@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Internet access -->
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Microphone access -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-    <!-- Microphone hardware -->
     <uses-feature
         android:name="android.hardware.microphone"
         android:required="false" />
 
-    <!-- Allow visibility of launchable apps -->
     <queries>
         <intent>
             <action android:name="android.intent.action.MAIN" />
@@ -24,7 +19,7 @@
         android:allowBackup="true"
         android:label="MIRA AI"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         <activity
             android:name=".MainActivity"
